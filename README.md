@@ -7,6 +7,7 @@
 
 dialogue_generate.ipynb
 - pre-trained 된 llama에 적당한 prompt를 줘서 다음 대화를 이어 나갈 수 있게 함
+- make_prompt()
 - llama chat 모델은 본인을 ai라고 지칭하며 감정 행동 등등...이거 해결  
   prompt :
     " "
