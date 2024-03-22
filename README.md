@@ -16,3 +16,10 @@
  ### dialogue act attribute model
   - input : 문장이 llama에 들어가 나온 embedding
   - output : "inform", "question", "directive", "commissive"  4개 classes 확률
+
+
+### prompt를 제외하고, 생성된 token 부터 attribute 모델에 들어가게 만듬
+- perturb_past의 input에 accumulated_hidden: accumulated_hidden = unpert_last_hidden[:, prompt_length:-1, :] # 1,0,4096 부터 하나씩 늘어남 
+
+- curr_length = curr_length - prompt_length
+- prediction = classifier(new_accumulated_hidden / (curr_length + 1 + horizon_length))
