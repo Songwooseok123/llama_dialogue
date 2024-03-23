@@ -23,3 +23,22 @@
 
 - curr_length = curr_length - prompt_length
 - prediction = classifier(new_accumulated_hidden / (curr_length + 1 + horizon_length))
+
+### 실험 setting 
+stepsize,perturb_layer,num_iterations
+1+(12*14)개 
+- not perturb
+- 0.01_{100, 11,22,32} * num_iter{3,5,7}
+- 0.02
+- 0.03
+- 0.04
+- 0.05
+- 0.06
+- 0.07
+- 0.08
+- 0.09
+- 0.1
+- 0.2
+- 0.3
+- 0.4
+- 0.5
