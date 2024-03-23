@@ -10,6 +10,7 @@
 #### utils.prompt_make.py
 - llama chat 모델은 본인을 ai라고 지칭하며 감정,행동을 가질 수 없다며 화자처럼 대답을 안 하는 경우가 종종 있음. prompot로 이거 해결  
  - ![image](https://github.com/Songwooseok123/llama_dialogue/assets/80091008/0c6c9f30-217d-43ea-a0f9-a27b9a2ea976)
+ - accorging to .... (근거가 되는 코드 링크 달기)
 
 
 
