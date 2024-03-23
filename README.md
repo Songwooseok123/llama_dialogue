@@ -23,6 +23,21 @@
 
 - curr_length = curr_length - prompt_length
 - prediction = classifier(new_accumulated_hidden / (curr_length + 1 + horizon_length))
+### Bert classifier
+- prompt 제외하고 생성된 token부터 input으로 받아서 act 분류하는 분류기 학습함,
+
+#### attribute model, bert model 둘 다 label_balanced 하게 다시 학습함
+
+#### 3/24 todo 
+- 레이어구간 별 섭동 속도 비교하기
+- 실험 setting하고 generate 하기 (no perturb 부터)
+#### 실험 setting
+- len
+- perturb layer
+- step size
+- num_iterations
+- 
+
 
 ### 실험 setting 
 stepsize,perturb_layer,num_iterations
