@@ -55,6 +55,9 @@ stepsize,perturb_layer,num_iterations
 - 0.09
 - 0.1
 - 0.2
-- 0.3
-- 0.4
-- 0.5
+
+
+### 실험결과
+- 3/30
+ - label 0,1,2,3 중 2번 label('directive')에 대한 분류가 잘 안됨.
+  - 생성된 문장 평가할 때 , label 2인거 빼고 45개 문장에 대해서 평가해보는 중 
